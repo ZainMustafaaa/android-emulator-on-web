@@ -9,14 +9,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/valaxy/android-web-emulator.git"
+        "url": "git+https://github.com/ZainMustafaaa/android-emulator-on-web.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/valaxy/android-web-emulator/issues"
+        "url": "https://github.com/ZainMustafaaa/android-emulator-on-web/issues"
     },
-    "homepage": "https://github.com/valaxy/android-web-emulator#readme",
+    "homepage": "https://github.com/ZainMustafaaa/android-emulator-on-web#readme",
     "dependencies": {
         "adbkit": "^2.3.1",
         "async": "^1.4.0",
