@@ -4,7 +4,7 @@
     "description": "Android emulator on web - POC",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js && cd ./web-emulator && npm start ./web-emulator/",
+        "start": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
