@@ -9,5 +9,3 @@ package-lock.json
 web-emulator/package-lock.json
 
 runtime/
-
-*.html
