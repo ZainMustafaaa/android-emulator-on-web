@@ -72,8 +72,8 @@ io.on('connection', function (socket) {
 	// INPUT: key
 	socket.on('key', function (data) {
 		
-		input.sendevent(androidKey[data.value], data.value).then(function () {
-			input.sendevent(45, 0)
+		input.sendevent(androidKey[data.key]).then(function () {
+			// input.sendevent(45, 0)
 		})
 
 		// var command = util.format('')

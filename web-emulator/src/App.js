@@ -23,18 +23,20 @@ class Screen extends Component {
     }
   }
 
+  componentDidMount() {
+    window.addEventListener('keydown', event => {
+      event.preventDefault();
+
+      if(event.keyCode === 224) return;
+
+      socket.emit('key', { key: event.key });
+      console.log('event ', event)
+    })
+  }
+
   render() {
     return (
       <img
-  
-        onKeyDown={event => {
-          event.preventDefault();
-    
-          if(event.keyCode === 224) return;
-    
-          // socket.emit('key', { key: event.keyCode, value: event.key });
-          // console.log('event ', event)
-        }}
 
         onMouseDown={e => {
           this.swipe.from.x = e.screenX * X_AXIS_DIFF;
@@ -100,6 +102,16 @@ class App extends Component {
             >
               <Screen data={this.state.data} />
             </ReactInputPosition>
+            <div>
+              <button onClick={(e) => {
+                e.preventDefault();
+                socket.emit('key', { key: 'Back' });
+              }} > Back</button>
+              <button onClick={(e) => {
+                e.preventDefault();
+                socket.emit('key', { key: 'Home' });
+              }} > Home</button>
+            </div>
           </div>
     );
   }
