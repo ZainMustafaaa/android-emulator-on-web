@@ -13,3 +13,5 @@ Proof of Concept to cast an emulator to web and control through mouse pointer. P
 ## GOTO web-emulator and start web react app
 
 > npm start
+
+References: https://github.com/valaxy/android-web-emulator
