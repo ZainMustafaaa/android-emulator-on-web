@@ -1,0 +1,13 @@
+.idea/
+node_modules/
+front/bower_components/
+
+web-emulator/node_modules
+
+package-lock.json
+
+web-emulator/package-lock.json
+
+runtime/
+
+*.html

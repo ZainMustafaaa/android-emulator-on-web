@@ -1,0 +1,30 @@
+{
+    "name": "android-emulator-on-web",
+    "version": "0.0.1",
+    "description": "Android emulator on web - POC",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js && cd ./web-emulator && npm start ./web-emulator/",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/valaxy/android-web-emulator.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/valaxy/android-web-emulator/issues"
+    },
+    "homepage": "https://github.com/valaxy/android-web-emulator#readme",
+    "dependencies": {
+        "adbkit": "^2.3.1",
+        "async": "^1.4.0",
+        "buffer-image-size": "^0.6.4",
+        "express": "^4.13.1",
+        "moment": "^2.10.5",
+        "socket.io": "^1.3.6",
+        "underscore": "^1.8.3",
+        "winston": "^1.0.1"
+    }
+}
